@@ -627,7 +627,7 @@ void code_gen(Ty_Node_Ptr cur)
 
 
 //hw5-13
-char* newlabel()
+char * newlabel()
 {
 	int n;
 	if (new_label_cnt >= 1000)
@@ -645,7 +645,7 @@ char* newlabel()
 	return new_lab;
 }
 
-char* newtemp()
+char * newtemp()
 {
 	int n;
 	if (new_temp_cnt >= 1000)
@@ -669,7 +669,7 @@ char* newtemp()
 char* strcat_my(char* desti, char* s1, char* s2, char* s3, char* s4, char* s5, char* s6)
 {
 	int total_leng = 0;
-	char* result;
+	char * result;
 	total_leng = strlen(desti) + strlen(s1) + strlen(s2) + strlen(s3) + strlen(s4) + strlen(s5) + strlen(s6) + 10;
 	result = (char*)malloc(total_leng);
 	strcpy(result, desti);
@@ -683,10 +683,10 @@ char* strcat_my(char* desti, char* s1, char* s2, char* s3, char* s4, char* s5, c
 	return result;
 }
 
-char* strcat_my2(char* desti, char* s1, char* s2, char* s3, char* s4, char* s5, char* s6, char* s7, char* s8, char* s9)
+char * strcat_my2(char* desti, char* s1, char* s2, char* s3, char* s4, char* s5, char* s6, char* s7, char* s8, char* s9)
 {
 	int total_leng = 0;
-	char* result;
+	char * result;
 	total_leng = strlen(desti) + strlen(s1) + strlen(s2) + strlen(s3) + strlen(s4) + strlen(s5) + strlen(s6) + strlen(s7) + strlen(s8) + strlen(s9) + 10;
 	result = (char*)malloc(total_leng);
 	strcpy(result, desti);
